@@ -1,0 +1,2 @@
+imports:
+    - { resource: vendor/ecphp/php-conventions/config/php73/grumphp.yml }
