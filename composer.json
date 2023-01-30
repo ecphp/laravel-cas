@@ -17,7 +17,7 @@
         "ext-libxml": "*",
         "ext-simplexml": "*",
         "ecphp/cas-lib": "^2.0",
-        "laravel/framework": "^8.0"
+        "laravel/framework": "^9.48"
     },
     "require-dev": {
         "ecphp/php-conventions": "^1.0",
