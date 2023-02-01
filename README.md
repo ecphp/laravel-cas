@@ -89,6 +89,7 @@ A CAS bundle for Laravel.
         );
     }
 ```
+
 ```shell
     php artisan vendor:publish --tag=laravel-cas
 ```
