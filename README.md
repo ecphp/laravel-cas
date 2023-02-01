@@ -17,7 +17,6 @@ A CAS bundle for Laravel.
     ],
 ```
 
-
 `config/auth.php`
 
 ```php
