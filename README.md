@@ -11,8 +11,7 @@ A CAS bundle for Laravel.
 `config/app.php`
 
 ```php
-    'providers'       => [
-        ...
+    'providers' => [
         EcPhp\LaravelCas\Providers\AppServiceProvider::class,
     ],
 ```
@@ -20,16 +19,14 @@ A CAS bundle for Laravel.
 `config/auth.php`
 
 ```php
-    'guards'           => [
-        ...
+    'guards' => [
         'laravel-cas' => [
-            'driver'   => 'laravel-cas',
+            'driver' => 'laravel-cas',
             'provider' => 'laravel-cas',
         ],
     ],
 
-    'providers'        => [
-        ...
+    'providers' => [
         'laravel-cas' => [
             'driver' => 'laravel-cas',
         ],
@@ -41,7 +38,6 @@ A CAS bundle for Laravel.
 ```php
     protected $middlewareGroups = [
         'web' => [
-            ...
             \EcPhp\LaravelCas\Middleware\CasAuthenticator::class
         ],
         ...
