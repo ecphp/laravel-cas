@@ -22,8 +22,9 @@
     "require-dev": {
         "ecphp/php-conventions": "^1.0",
         "guzzlehttp/guzzle": "^7.5",
-        "nyholm/psr7": "^1.5",
         "phpstan/phpstan-strict-rules": "^1.4",
+        "orchestra/testbench": "^8.22",
+        "nyholm/psr7": "^1.5",
         "symfony/cache": "^6.2",
         "symfony/psr-http-message-bridge": "^2.1"
     },
@@ -32,6 +33,7 @@
     },
     "autoload": {
         "psr-4": {
+            "EcPhp\\LaravelCas\\Tests\\": "tests/",
             "EcPhp\\LaravelCas\\": "src/"
         }
     },

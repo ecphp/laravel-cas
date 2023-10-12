@@ -45,7 +45,7 @@ return [
                 0 => 'service',
             ],
             'default_parameters' => [
-                'service' => env('CAS_REDIRECT_LOGOUT_URL', 'https://my-app/homepage-logoutss'),
+                'service' => env('CAS_REDIRECT_LOGOUT_URL', 'https://my-app/homepage-logout'),
             ],
         ],
         'proxy' => [

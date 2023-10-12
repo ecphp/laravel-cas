@@ -11,10 +11,10 @@ declare(strict_types=1);
 
 namespace EcPhp\LaravelCas\Controllers;
 
-use EcPhp\CasLib\Contract\CasInterface;
-use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Redirector;
+use Illuminate\Http\RedirectResponse;
+use EcPhp\CasLib\Contract\CasInterface;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 
