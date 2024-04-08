@@ -23,7 +23,7 @@ final class ProxyCallbackController extends Controller
         Request $request,
         CasInterface $cas,
         ServerRequestInterface $serverRequest
-    ): ResponseInterface|Response {
+    ): Response|ResponseInterface {
         return $cas
             ->handleProxyCallback(
                 $serverRequest

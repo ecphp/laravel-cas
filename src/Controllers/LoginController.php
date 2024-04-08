@@ -24,7 +24,7 @@ final class LoginController extends Controller
         Request $request,
         CasInterface $cas,
         ServerRequestInterface $serverRequest,
-    ): Redirector|ResponseInterface|RedirectResponse {
+    ): Redirector|RedirectResponse|ResponseInterface {
         $parameters = $request->query->all() + [
             'renew' => null !== auth()->guard()->user(),
         ];

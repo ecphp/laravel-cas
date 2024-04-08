@@ -26,8 +26,7 @@ final class CasUserProvider implements UserProvider
 
     public function __construct(
         private Session $session
-    ) {
-    }
+    ) {}
 
     public function getModel(): ?Authenticatable
     {
@@ -63,9 +62,7 @@ final class CasUserProvider implements UserProvider
         return $this->session->get(auth()->guard($this->guard_name)->getName());
     }
 
-    public function updateRememberToken(Authenticatable $user, $token)
-    {
-    }
+    public function updateRememberToken(Authenticatable $user, $token) {}
 
     public function validateCredentials(Authenticatable $user, array $credentials)
     {
