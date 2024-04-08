@@ -11,12 +11,10 @@
     ],
     "homepage": "https://github.com/ecphp/",
     "require": {
-        "php": ">= 8.0.2",
+        "php": ">= 8.1",
         "ext-dom": "*",
-        "ext-json": "*",
-        "ext-libxml": "*",
         "ext-simplexml": "*",
-        "ecphp/cas-lib": "^2.0",
+        "ecphp/cas-lib": "^3.0",
         "laravel/framework": "^9 || ^10"
     },
     "require-dev": {
@@ -37,9 +35,9 @@
     },
     "config": {
         "allow-plugins": {
-            "phpstan/extension-installer": true,
+            "ergebnis/composer-normalize": true,
             "phpro/grumphp": true,
-            "ergebnis/composer-normalize": true
+            "phpstan/extension-installer": true
         }
     }
 }
