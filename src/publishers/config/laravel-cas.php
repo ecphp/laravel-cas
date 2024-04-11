@@ -34,6 +34,8 @@ return [
             ],
             'default_parameters' => [
                 'format' => 'JSON',
+                'groups' => true,
+                'service' => env('CAS_REDIRECT_LOGIN_URL', 'https://my-app/homepage-login'),
                 // 'pgtUrl' => 'https://my-app/casProxyCallback',
             ],
         ],
