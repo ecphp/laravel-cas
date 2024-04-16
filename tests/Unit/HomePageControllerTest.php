@@ -13,10 +13,13 @@ namespace EcPhp\LaravelCas\Tests\Unit;
 
 use EcPhp\LaravelCas\Tests\TestCase;
 
-class HomePageControllerTest extends TestCase
+/**
+ * @internal
+ *
+ * @coversNothing
+ */
+final class HomePageControllerTest extends TestCase
 {
-    private $array;
-
     public function testHomePageController()
     {
         $response = $this->get('/homepage');
@@ -27,6 +30,6 @@ You are most probably using the default LARAVEL CAS configuration.</p>
 <code>config/laravel-cas.php</code></p>
 <p>Please update your .env file configuration and add <code>CAS_REDIRECT_LOGIN_ROUTE</code>
 with an existing route of your app.</p>';
-        $this->assertEquals($shouldReturnTxt, $response->getContent());
+        self::assertEquals($shouldReturnTxt, $response->getContent());
     }
 }

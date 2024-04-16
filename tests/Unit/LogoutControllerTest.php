@@ -13,13 +13,18 @@ namespace EcPhp\LaravelCas\Tests\Unit;
 
 use EcPhp\LaravelCas\Tests\TestCase;
 
-class LogoutControllerTest extends TestCase
+/**
+ * @internal
+ *
+ * @coversNothing
+ */
+final class LogoutControllerTest extends TestCase
 {
-    private $uri = 'logout';
-
     private $response;
 
-    public function setUp(): void
+    private $uri = 'logout';
+
+    protected function setUp(): void
     {
         parent::setUp();
 

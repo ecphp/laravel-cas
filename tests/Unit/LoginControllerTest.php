@@ -13,13 +13,18 @@ namespace EcPhp\LaravelCas\Tests\Unit;
 
 use EcPhp\LaravelCas\Tests\TestCase;
 
-class LoginControllerTest extends TestCase
+/**
+ * @internal
+ *
+ * @coversNothing
+ */
+final class LoginControllerTest extends TestCase
 {
-    private $uri = 'login';
-
     private $response;
 
-    public function setUp(): void
+    private $uri = 'login';
+
+    protected function setUp(): void
     {
         parent::setUp();
         $this->response = $this->get($this->uri);

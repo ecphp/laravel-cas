@@ -1,5 +1,14 @@
 <?php
 
+/**
+ * For the full copyright and license information, please view
+ * the LICENSE file that was distributed with this source code.
+ *
+ * @see https://github.com/ecphp
+ */
+
+declare(strict_types=1);
+
 /*
 |--------------------------------------------------------------------------
 | Register The Composer Auto Loader
@@ -10,7 +19,7 @@
 | into the script here so that we do not have to worry about the
 | loading of any our classes "manually". Feels great to relax.
 |
-*/
+ */
 
 require __DIR__ . '/../vendor/autoload.php';
 // require __DIR__ . '/helpers.php';
@@ -27,7 +36,7 @@ use Carbon\Carbon;
 | if the timezone is not explicitly set. This will be used by each of
 | the PHP date and date-time functions throughout the application.
 |
-*/
+ */
 
 date_default_timezone_set('UTC');
 

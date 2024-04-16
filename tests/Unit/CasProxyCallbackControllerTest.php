@@ -13,13 +13,16 @@ namespace EcPhp\LaravelCas\Tests\Unit;
 
 use EcPhp\LaravelCas\Tests\TestCase;
 
-class CasProxyCallbackControllerTest extends TestCase
+/**
+ * @internal
+ *
+ * @coversNothing
+ */
+final class CasProxyCallbackControllerTest extends TestCase
 {
-    private $uri = 'proxy';
-
     private $response;
 
-    public function setUp(): void
+    protected function setUp(): void
     {
         parent::setUp();
 
@@ -28,11 +31,11 @@ class CasProxyCallbackControllerTest extends TestCase
 
     public function testIfNotFalse()
     {
-        $this->assertNotFalse($this->response);
+        self::assertNotFalse($this->response);
     }
 
     public function testIfXml()
     {
-        $this->assertEquals('', $this->response->getContent());
+        self::assertEquals('', $this->response->getContent());
     }
 }
