@@ -22,8 +22,7 @@ final class CasAuthenticator
     public function __construct(
         private CasInterface $cas,
         private ServerRequestInterface $serverRequest
-    ) {
-    }
+    ) {}
 
     public function handle(Request $request, Closure $next): mixed
     {

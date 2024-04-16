@@ -75,8 +75,6 @@ final class CasUser implements Authenticatable
 
     /**
      * Get the password for the user.
-     *
-     * @return string
      */
     public function getAuthPassword(): ?string
     {
@@ -103,8 +101,6 @@ final class CasUser implements Authenticatable
 
     /**
      * Get the column name for the "remember me" token.
-     *
-     * @return string
      */
     public function getRememberTokenName(): ?string
     {
@@ -121,9 +117,7 @@ final class CasUser implements Authenticatable
      *
      * @param mixed $value
      */
-    public function setRememberToken($value): void
-    {
-    }
+    public function setRememberToken($value): void {}
 
     /**
      * Get the storage.

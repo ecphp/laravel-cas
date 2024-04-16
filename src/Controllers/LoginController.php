@@ -11,10 +11,10 @@ declare(strict_types=1);
 
 namespace EcPhp\LaravelCas\Controllers;
 
+use EcPhp\CasLib\Contract\CasInterface;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Redirector;
-use Illuminate\Http\RedirectResponse;
-use EcPhp\CasLib\Contract\CasInterface;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 
@@ -24,7 +24,7 @@ final class LoginController extends Controller
         Request $request,
         CasInterface $cas,
         ServerRequestInterface $serverRequest,
-    ): Redirector|ResponseInterface|RedirectResponse {
+    ): Redirector|RedirectResponse|ResponseInterface {
         $parameters = $request->query->all() + [
             'renew' => null !== auth()->guard()->user(),
         ];

@@ -13,12 +13,13 @@ namespace EcPhp\LaravelCas\Config;
 
 use EcPhp\CasLib\Configuration\Properties as PsrCasConfiguration;
 use EcPhp\CasLib\Contract\Configuration\PropertiesInterface;
-use const FILTER_VALIDATE_URL;
 use Illuminate\Routing\Router;
 use Illuminate\Routing\Router as RouterInterface;
 use ReturnTypeWillChange;
 use Symfony\Component\HttpFoundation\ParameterBag;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
+
+use const FILTER_VALIDATE_URL;
 
 final class Laravel implements PropertiesInterface
 {
@@ -109,17 +110,14 @@ final class Laravel implements PropertiesInterface
      */
     private function updateDefaultParameterRouteToUrl(array $properties, string $key): array
     {
-        foreach ($properties['protocol'] as $protocolKey => $protocol)
-        {
-            if (false === isset($protocol['default_parameters'][$key]))
-            {
+        foreach ($properties['protocol'] as $protocolKey => $protocol) {
+            if (false === isset($protocol['default_parameters'][$key])) {
                 continue;
             }
 
             $route = $protocol['default_parameters'][$key];
 
-            if (false === filter_var($route, FILTER_VALIDATE_URL))
-            {
+            if (false === filter_var($route, FILTER_VALIDATE_URL)) {
                 $route = $this
                     ->router
                     ->generate(

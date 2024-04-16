@@ -11,9 +11,9 @@ declare(strict_types=1);
 
 namespace EcPhp\LaravelCas\Controllers;
 
+use EcPhp\CasLib\Contract\CasInterface;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
-use EcPhp\CasLib\Contract\CasInterface;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 
@@ -23,7 +23,7 @@ final class ProxyCallbackController extends Controller
         Request $request,
         CasInterface $cas,
         ServerRequestInterface $serverRequest
-    ): ResponseInterface|Response {
+    ): Response|ResponseInterface {
         return $cas
             ->handleProxyCallback(
                 $serverRequest
