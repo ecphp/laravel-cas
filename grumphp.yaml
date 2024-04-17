@@ -1,2 +1,7 @@
 imports:
     - { resource: vendor/ecphp/php-conventions/config/php73/grumphp.yml }
+
+parameters:
+    extra_tasks:
+        phpunit:
+            always_execute: true
