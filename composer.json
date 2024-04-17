@@ -20,9 +20,9 @@
     "require-dev": {
         "ecphp/php-conventions": "^1.0",
         "guzzlehttp/guzzle": "^7.5",
-        "phpstan/phpstan-strict-rules": "^1.4",
-        "orchestra/testbench": "^8.22 || ^9.0",
         "nyholm/psr7": "^1.5",
+        "orchestra/testbench": "^8.22 || ^9.0",
+        "phpstan/phpstan-strict-rules": "^1.4",
         "symfony/cache": "^6.2",
         "symfony/psr-http-message-bridge": "^2.1"
     },
@@ -37,9 +37,9 @@
     },
     "config": {
         "allow-plugins": {
-            "phpstan/extension-installer": true,
+            "ergebnis/composer-normalize": true,
             "phpro/grumphp": true,
-            "ergebnis/composer-normalize": true
+            "phpstan/extension-installer": true
         }
     },
     "extra": {
@@ -48,5 +48,11 @@
                 "EcPhp\\LaravelCas\\Providers\\AppServiceProvider"
             ]
         }
+    },
+    "scripts": {
+        "changelog-unreleased": "auto-changelog -c .auto-changelog -u",
+        "changelog-version": "auto-changelog -c .auto-changelog -v",
+        "grumphp": "./vendor/bin/grumphp run",
+        "phpunit": "vendor/bin/phpunit"
     }
 }
