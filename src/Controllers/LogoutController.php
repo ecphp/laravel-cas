@@ -24,7 +24,7 @@ final class LogoutController extends Controller
         Request $request,
         CasInterface $cas,
         ServerRequestInterface $serverRequest
-    ): RedirectResponse|Redirector|ResponseInterface {
+    ): Redirector|RedirectResponse|ResponseInterface {
         $response = $cas
             ->logout(
                 $serverRequest->withQueryParams(

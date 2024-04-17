@@ -29,8 +29,7 @@ final class CasGuard implements AuthGuard
         private ?UserProvider $provider,
         private Request $request,
         private Session $session
-    ) {
-    }
+    ) {}
 
     public function attempt(array $credentials): ?Authenticatable
     {

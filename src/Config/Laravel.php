@@ -85,10 +85,10 @@ final class Laravel implements PropertiesInterface
      * Transform Symfony routes into absolute URLs.
      *
      * @param array<string, mixed> $properties
-     *   The properties.
+     *                                         The properties.
      *
      * @return array<string, mixed>
-     *   The updated properties.
+     *                              The updated properties.
      */
     private function routeToUrl(array $properties): array
     {
