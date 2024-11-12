@@ -81,6 +81,8 @@ final class CasUser implements Authenticatable
         return null;
     }
 
+    public function getAuthPasswordName() {}
+
     public function getPassword(): ?string
     {
         return null;

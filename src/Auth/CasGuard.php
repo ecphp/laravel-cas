@@ -17,6 +17,8 @@ use Illuminate\Contracts\Auth\UserProvider;
 use Illuminate\Contracts\Session\Session;
 use Illuminate\Http\Request;
 
+use function sprintf;
+
 final class CasGuard implements AuthGuard
 {
     private bool $loggedOut = false;

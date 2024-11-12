@@ -15,7 +15,7 @@
         "ext-dom": "*",
         "ext-simplexml": "*",
         "ecphp/cas-lib": "^2.0",
-        "laravel/framework": "^10 || ^11"
+        "laravel/framework": "^9 || ^10 || ^11"
     },
     "require-dev": {
         "ecphp/php-conventions": "^1.0",
@@ -25,7 +25,7 @@
         "phpstan/phpstan-strict-rules": "^1.6",
         "roave/security-advisories": "dev-latest",
         "symfony/cache": "^6.4 || ^7.1",
-        "symfony/psr-http-message-bridge": "^v6.4 || ^7.1"
+        "symfony/psr-http-message-bridge": "^6.4 || ^7.1"
     },
     "suggest": {
         "symfony/psr-http-message-bridge": "To bridge between Laravel and PSR HTTP Message"
