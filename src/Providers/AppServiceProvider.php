@@ -45,7 +45,7 @@ final class AppServiceProvider extends ServiceProvider
             'laravel-cas'
         );
         $this->app->router->group(
-            ['namespace' => 'EcPhp\\LaravelCas\\Controllers'],
+            ['namespace' => 'EcPhp\LaravelCas\Controllers'],
             static fn () => require dirname(__DIR__) . '/Config/routes.php'
         );
         Auth::provider(

@@ -33,6 +33,8 @@ final class CasUserProvider implements UserProvider
         return $this->model;
     }
 
+    public function rehashPasswordIfRequired(Authenticatable $user, array $credentials, bool $force = false) {}
+
     public function retrieveByCredentials(array $credentials): ?Authenticatable
     {
         if ([] === $credentials) {
